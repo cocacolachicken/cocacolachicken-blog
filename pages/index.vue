@@ -7,7 +7,9 @@ const { data: home } = await useAsyncData(() => queryCollection('content').path(
 
 <template>
   <title>Tyler's Blog</title>
-  <ContentRenderer v-if="home" :value="home"> </ContentRenderer>
+  <div>
+    Don't cry I rock chanel
+  </div>
 </template>
 
 <style scoped>

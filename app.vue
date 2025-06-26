@@ -5,8 +5,9 @@
       <h1>Tyler's Blog</h1>
     </header>
     <nav>
-        <NuxtLink to="/">Home</NuxtLink> |
-        <NuxtLink to="/media-list">My media</NuxtLink>
+      <NuxtLink to="/">Home</NuxtLink> |
+      <NuxtLink to="/media-list">My media</NuxtLink> |
+      <NuxtLink to="/posts">Posts</NuxtLink>
     </nav>
     <main id="main">
       <div>
@@ -22,6 +23,23 @@
 </template>
 
 <style>
+a:visited {
+  color: black
+}
+
+a:hover {
+  color: black
+}
+
+a:focus {
+  color: black
+}
+
+a:active {
+  color: white
+}
+
+
 #all {
   margin: auto;
   max-width: 600px;
@@ -35,11 +53,11 @@
 
 h1 {
   font-weight: bold;
-  margin: 20px 0px 0px;
+  margin: 20px 0 0;
 }
 
 nav {
-  margin: 0px 0px 20px;
+  margin: 0 0 20px;
 }
 
 </style>
