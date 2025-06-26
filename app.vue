@@ -1,23 +1,24 @@
 <template>
+  <NuxtLayout>
+    <div id="all">
+    <header>
+      <h1>Tyler's Blog</h1>
+    </header>
+    <nav>
+        <NuxtLink to="/">Home</NuxtLink> |
+        <NuxtLink to="/media-list">My media</NuxtLink>
+    </nav>
+    <main id="main">
+      <div>
+        <NuxtRouteAnnouncer />
+        <NuxtPage/>
+      </div>
+    </main>
+    <aside>
 
-  <div id="all">
-  <header>
-    <h1>Tyler's Blog</h1>
-  </header>
-  <nav>
-      <NuxtLink to="/">Home</NuxtLink> |
-      <NuxtLink to="/media-list">My media</NuxtLink>
-  </nav>
-  <main id="main">
-    <div>
-      <NuxtRouteAnnouncer />
-      <NuxtPage/>
+    </aside>
     </div>
-  </main>
-  <aside>
-
-  </aside>
-  </div>
+  </NuxtLayout>
 </template>
 
 <style>
